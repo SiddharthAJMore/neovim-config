@@ -38,7 +38,6 @@ return {
           "pyright",
           "bashls",
           "jsonls",
-          "yamlls",
         },
         automatic_installation = true,
       })
@@ -46,10 +45,8 @@ return {
       -------------------------------------------------
       -- LSP servers
       -------------------------------------------------
-      local lspconfig = require("lspconfig")
-
       -- Lua
-      lspconfig.lua_ls.setup({
+      vim.lsp.config('*', {
         capabilities = capabilities,
         settings = {
           Lua = {
@@ -64,31 +61,6 @@ return {
             },
           },
         },
-      })
-
-      -- TypeScript / JavaScript
-      lspconfig.ts_ls.setup({
-        capabilities = capabilities,
-      })
-
-      -- Python
-      lspconfig.pyright.setup({
-        capabilities = capabilities,
-      })
-
-      -- Bash
-      lspconfig.bashls.setup({
-        capabilities = capabilities,
-      })
-
-      -- JSON
-      lspconfig.jsonls.setup({
-        capabilities = capabilities,
-      })
-
-      -- YAML
-      lspconfig.yamlls.setup({
-        capabilities = capabilities,
       })
 
       -------------------------------------------------
