@@ -5,7 +5,7 @@ return {
     main = "nvim-treesitter.configs",
     branch = "master", 
     opts = {
-        ensure_installed = { "c", "lua", "vim", "help", "javadoc", "python", "bash", "java", "go" },
+        ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "javadoc", "python", "bash", "java", "go" },
         auto_install = true,
         highlight = { 
             enable = true,
