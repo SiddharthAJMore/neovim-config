@@ -16,7 +16,7 @@ return {
         require("fidget").setup({})
         require("mason").setup()
         require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "pyright", "gopls", "jdtls" },
+            ensure_installed = { "lua_ls", "pyright", "gopls", "jdtls", "rust_analyzer" },
             handler = {
                 function(server_name)
                     require("lspconfig")[server_name].setup({})

@@ -1,6 +1,7 @@
 require("hyperbolt.lazy")
 require("hyperbolt.remap")
 require("hyperbolt.set")
+require("hyperbolt.commandexec")
 
 -- local augroup = vim.api.nvim_create_augroup
 -- local HyperboltGroup = augroup('Hyperbolt', {})
